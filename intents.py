@@ -116,7 +116,7 @@ intents=[
       "timing college"
    ],
    "responses": [
-      "College is open 8am-5pm Monday-Saturday!"
+      "College is open 9am-3.40pm Monday-Saturday!"
    ],
    "context_set": ""
 },
@@ -140,7 +140,7 @@ intents=[
       "call"
    ],
    "responses": [
-      "You can contact at: NUMBER"
+      "You can contact at: XXXX"
    ],
    "context_set": ""
 },
@@ -176,7 +176,7 @@ intents=[
       "Civil engineering"
    ],
    "responses": [
-      "Our university offers Information Technology, computer Engineering, Mechanical engineering,Chemical engineering, Civil engineering and extc Engineering."
+      "Our university offers AIML, CSE, ECE and EEE"
    ],
    "context_set": ""
 },
@@ -208,7 +208,7 @@ intents=[
       "fees for non-Ac room for boys"
    ],
    "responses": [
-      "For Fee detail visit <a target=\"_blank\" href=\"LINK\"> here</a>"
+      "For Fee detail visit our Official website"
    ],
    "context_set": ""
 },
@@ -231,7 +231,7 @@ intents=[
       "location"
    ],
    "responses": [
-      "<a target=\"_blank\" href=\"ADD YOU GOOGLE MAP LINK HERE\"> here</a>"
+      "Our Instituite located in Peddapalli"
    ],
    "context_set": ""
 },
@@ -262,7 +262,7 @@ intents=[
       "distance between hostel and college"
    ],
    "responses": [
-      "For hostel detail visit <a target=\"_blank\" href=\"ADD YOUR HOSTEL DETAIL PDF LINK OR ANY INFORMATION LINK OR ADD YOU OWN ANSWERS\"> here</a>"
+      "For hostel detail reachout your HOD"
    ],
    "context_set": ""
 },
@@ -304,7 +304,7 @@ intents=[
       "documents needed"
    ],
    "responses": [
-      "To know more about document required visit <a target=\"_blank\" href=\"ADD LINK OF ADMISSION GUIDANCE DOCUMENT FROM YOUR UNIVERSITY WEBSITE\"> here</a>"
+      "To know more about document required visit Colleges Official Page"
    ],
    "context_set": ""
 },
@@ -316,11 +316,11 @@ intents=[
       "How many floors does college have",
       "floors in college",
       "floors in college",
-      "how tall is UNI's College of Engineering college building",
+      "how tall is Trinity College of Engineering college building",
       "floors"
    ],
    "responses": [
-      "My College has total 2 floors "
+      "My College has total 2 floors and with 2 more blocks for MBA & B.Pharmacy"
    ],
    "context_set": ""
 },
@@ -336,7 +336,7 @@ intents=[
       "What is next lecture"
    ],
    "responses": [
-      "Timetable provide direct to the students OR To know about syllabus visit <a target=\"_blank\" href=\"TIMETABLE LINK\"> here</a>"
+      "Timetable provide direct to the students OR To know about syllabus visit Jntuh Page"
    ],
    "context_set": ""
 },
@@ -359,7 +359,7 @@ intents=[
       "how many libraries"
    ],
    "responses": [
-      "There is one huge and spacious library.timings are 8am to 6pm and for more visit <a target=\"blank\" href=\"ADD LIBRARY DETAIL LINK\">here</a>"
+      "There is one huge and spacious library.timings are 9am to 4pm and for more visit Library"
    ],
    "context_set": ""
 },
@@ -407,7 +407,7 @@ intents=[
       "What is there to eat?"
    ],
    "responses": [
-      "we serve Franky, Locho, Alu-puri, Kachori, Khavsa, Thaali and many more on menu"
+      "we serve Samosas, Cakes and puffs"
    ],
    "context_set": ""
 },
@@ -425,7 +425,7 @@ intents=[
       "companies"
    ],
    "responses": [
-      "To know about placement visit <a target=\"_blank\" href=\"PLACEMENT INFORMATION LINK FROM YOUR UNIVERSITY WEBSITE IF THEY HAVE\">here</a>"
+      "To know about placement Contact PLACEMENT OFFICER"
    ],
    "context_set": ""
 },
@@ -480,7 +480,7 @@ intents=[
       "name of principal"
    ],
    "responses": [
-      "XYZ is college principal and if you need any help then call your branch hod first.That is more appropriate"
+      "Mr. Manipal is college principal and if you need any help then call your branch hod first.That is more appropriate"
    ],
    "context_set": ""
 },
@@ -500,7 +500,7 @@ intents=[
       "when is semester"
    ],
    "responses": [
-      "Here is the Academic Calendar  <a target=\"_blank\" href=\"YOUR ACADEMIC CALENDER\">website</a>"
+      "To access timetable visit Jntuh Official website"
    ],
    "context_set": ""
 },
@@ -515,7 +515,7 @@ intents=[
       "admission process"
    ],
    "responses": [
-      "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
+      "Application can also be submitted online through the Unversity's Official website"
    ],
    "context_set": ""
 },
@@ -582,7 +582,7 @@ intents=[
       "seats"
    ],
    "responses": [
-      "For IT, Computer and extc 60 per branch and seat may be differ for different department."
+      "For AIML, Computer, ECE and EEE 60 per branch and seat may be differ for different department."
    ],
    "context_set": ""
 },
@@ -600,7 +600,7 @@ intents=[
       "do we have to wear uniform"
    ],
    "responses": [
-      "ENTER YOUR OWN UNIVERSITY UNIFORM CIRCULER"
+      "Yes our College beliefs in equality and uniform can be collected from administration officer"
    ],
    "context_set": ""
 },
@@ -615,7 +615,7 @@ intents=[
       "how many committee are there in college"
    ],
    "responses": [
-      "For the various committe in college contact this number: ADD NUMBER"
+      "For the various committe in college contact this number: NILL"
    ],
    "context_set": ""
 },
@@ -624,7 +624,10 @@ intents=[
    "patterns": [
       "I love you",
       "Will you marry me",
-      "Do you love me"
+      "Do you love me",
+      "what do you capable of?",
+      'Are you a boy or girl?',
+      'do you know '
    ],
    "responses": [
       "I am not program for this, please ask appropriate query"
@@ -716,9 +719,10 @@ intents=[
       "what can you do",
       "what are the thing you can do",
       "things you can do",
-      "what can u do for me",
-      "how u can help me",
-      "why i should use you"
+      "what can You do for me",
+      "how You can help me",
+      "why i should use you",
+      'how you can help me'
    ],
    "responses": [
       "I can answer to low-intermediate questions regarding college",
