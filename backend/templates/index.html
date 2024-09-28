@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriNite ChatBot</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    
+</head>
+<body style="display: flex;align-items: center;justify-content: center;background-color: rgb(24, 24, 24);">
+    
+    <div class="container">
+        <div id="history"><div>
+            <div class="left msg">Hello How can i help u ?</div></div>
+        </div>
+        <div id="inputs"><input type="text" name="query" id="query" placeholder="Query">
+        <button id="b" type="button" onclick="buttonclick()" >Send</button></div>
+    </div>
+    <script>
+        let history=document.querySelector('#history');
+        async function buttonclick(){
+            let query=document.getElementById('query').value;
+            history.innerHTML+=`<div class='right msg'>${query}</div>`;
+            await fetch(`http://127.0.0.1:8000/api/get/${query}`).then((resp)=>{return resp.json()}).then((data)=>{
+                history.innerHTML+=`<div class='left msg'>${data['message']}</div>`
+            });
+            document.getElementById('query').value='';
+            let lastMsgDiv = document.getElementById('history').lastChild;
+            lastMsgDiv.scrollIntoView({ behavior: 'smooth' });
+            
+
+            
+        }
+    </script>
+</body>
+</html>
