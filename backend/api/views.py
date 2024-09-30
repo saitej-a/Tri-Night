@@ -12,6 +12,6 @@ def index(request,st):
     bot=model.predict(token)[0]
     for intent in intents:
         if intent['tag']==bot:
-            return JsonResponse({"message":random.choices(intent['responses'])[0]})
-    # Response({"message":random.choices(intent['responses'])[0]},status=status.HTTP_200_OK)
+            return Response({"message":random.choices(intent['responses'])[0]},status=status.HTTP_200_OK)
+    
     return Response({"message":"Bad request"},status=status.HTTP_400_BAD_REQUEST)
