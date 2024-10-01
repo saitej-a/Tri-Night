@@ -25,7 +25,7 @@ function App() {
         
     }
     const getall=async ()=>{
-        await fetch('http://127.0.0.1:8000/api/getallpatterns/').then((data)=>{return data.json()}).then((data)=>{setPatterns(data['data'])});
+        await fetch('https://27saitejaankam.pythonanywhere.com/api/getallpatterns/').then((data)=>{return data.json()}).then((data)=>{setPatterns(data['data'])});
     }
     useEffect(()=>{getall()},[]);
    const submit=(p)=>{
