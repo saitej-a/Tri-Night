@@ -22,7 +22,7 @@
         async function buttonclick(){
             let query=document.getElementById('query').value;
             history.innerHTML+=`<div class='right msg'>${query}</div>`;
-            await fetch(`http://127.0.0.1:8000/api/get/${query}`).then((resp)=>{return resp.json()}).then((data)=>{
+            await fetch(`http://127.0.0.1:8000/api/get/`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query})}).then((resp)=>{return resp.json()}).then((data)=>{
                 history.innerHTML+=`<div class='left msg'>${data['message']}</div>`
             });
             document.getElementById('query').value='';

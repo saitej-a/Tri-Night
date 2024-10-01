@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import index
+from .views import index,getAll
 urlpatterns=[
-    path('get/<str:st>',index,name='index')
+    path('get/',index,name='index'),
+    path('getallpatterns/',getAll)
 ]
