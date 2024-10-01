@@ -12,7 +12,7 @@ function App() {
         history.innerHTML+=`<div class='right msg'>${quey}</div>`;
         try{
             const arr={query:quey};
-            let a = await fetch(`http://127.0.0.1:8000/api/get/`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(arr)}).then((v)=>{ return v.json()});
+            let a = await fetch(`https://27saitejaankam.pythonanywhere.com/api/get/`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(arr)}).then((v)=>{ return v.json()});
             setQuery('');
             document.getElementById('query').value='';
             getall();
